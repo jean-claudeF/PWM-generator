@@ -1,0 +1,190 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Raspi_Pico:Pico U1
+U 1 1 642D3798
+P 4400 3200
+F 0 "U1" H 4400 4415 50  0000 C CNN
+F 1 "Pico" H 4400 4324 50  0000 C CNN
+F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 4400 3200 50  0001 C CNN
+F 3 "" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 642D4A3E
+P 6125 2800
+F 0 "RV1" H 6055 2846 50  0000 R CNN
+F 1 "10k" H 6055 2755 50  0000 R CNN
+F 2 "" H 6125 2800 50  0001 C CNN
+F 3 "~" H 6125 2800 50  0001 C CNN
+	1    6125 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Display_Character:LCD-016N002L U2
+U 1 1 642D4ED2
+P 6300 4150
+F 0 "U2" H 6725 3425 50  0000 C CNN
+F 1 "LCD-016N002L" H 6975 3525 50  0000 C CNN
+F 2 "Display:LCD-016N002L" H 6320 3230 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/37299/37299.pdf" H 6800 3850 50  0001 C CNN
+	1    6300 4150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3550 5900 3550
+Wire Wire Line
+	5100 3650 5900 3650
+Wire Wire Line
+	5100 3850 5900 3850
+Wire Wire Line
+	5500 4750 5500 4050
+Wire Wire Line
+	5500 4050 5100 4050
+Wire Wire Line
+	5500 4750 5900 4750
+Text GLabel 5225 2250 2    50   Input ~ 0
++5V
+Text GLabel 6200 5050 0    50   Input ~ 0
++5V
+Wire Wire Line
+	6300 4950 6300 5050
+Wire Wire Line
+	6300 5050 6200 5050
+Wire Wire Line
+	5100 2250 5225 2250
+$Comp
+L power:GNDD #PWR01
+U 1 1 642D8D3A
+P 5200 5050
+F 0 "#PWR01" H 5200 4800 50  0001 C CNN
+F 1 "GNDD" H 5204 4895 50  0001 C CNN
+F 2 "" H 5200 5050 50  0001 C CNN
+F 3 "" H 5200 5050 50  0001 C CNN
+	1    5200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3750 5900 3750
+Wire Wire Line
+	6300 3350 5200 3350
+Wire Wire Line
+	5200 3350 5200 3950
+Wire Wire Line
+	5100 3950 5200 3950
+Connection ~ 5200 3950
+Wire Wire Line
+	5200 3950 5200 4650
+Wire Wire Line
+	5900 4650 5200 4650
+Connection ~ 5200 4650
+Wire Wire Line
+	5100 4150 5575 4150
+Wire Wire Line
+	5575 4150 5575 4550
+Wire Wire Line
+	5575 4550 5900 4550
+$Comp
+L Device:D D1
+U 1 1 642D9FBE
+P 6750 4900
+F 0 "D1" V 6796 4821 50  0000 R CNN
+F 1 "1N4148" V 6705 4821 50  0000 R CNN
+F 2 "" H 6750 4900 50  0001 C CNN
+F 3 "~" H 6750 4900 50  0001 C CNN
+	1    6750 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 4750 6750 4750
+$Comp
+L power:GNDD #PWR03
+U 1 1 642DA947
+P 6750 5050
+F 0 "#PWR03" H 6750 4800 50  0001 C CNN
+F 1 "GNDD" H 6754 4895 50  0001 C CNN
+F 2 "" H 6750 5050 50  0001 C CNN
+F 3 "" H 6750 5050 50  0001 C CNN
+	1    6750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 642DB824
+P 6900 2775
+F 0 "RV2" H 6830 2821 50  0000 R CNN
+F 1 "10K" H 6830 2730 50  0000 R CNN
+F 2 "" H 6900 2775 50  0001 C CNN
+F 3 "~" H 6900 2775 50  0001 C CNN
+	1    6900 2775
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 2800 5400 2800
+Wire Wire Line
+	5400 2800 5400 3050
+Wire Wire Line
+	5400 3050 5100 3050
+Wire Wire Line
+	5100 3150 6650 3150
+Wire Wire Line
+	6650 3150 6650 2775
+Wire Wire Line
+	6650 2775 6750 2775
+$Comp
+L power:GNDD #PWR02
+U 1 1 642DC3A8
+P 6125 2950
+F 0 "#PWR02" H 6125 2700 50  0001 C CNN
+F 1 "GNDD" H 6129 2795 50  0001 C CNN
+F 2 "" H 6125 2950 50  0001 C CNN
+F 3 "" H 6125 2950 50  0001 C CNN
+	1    6125 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR04
+U 1 1 642DC6C0
+P 6900 2925
+F 0 "#PWR04" H 6900 2675 50  0001 C CNN
+F 1 "GNDD" H 6904 2770 50  0001 C CNN
+F 2 "" H 6900 2925 50  0001 C CNN
+F 3 "" H 6900 2925 50  0001 C CNN
+	1    6900 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2625 6900 2575
+Wire Wire Line
+	6900 2575 6125 2575
+Wire Wire Line
+	6125 2575 6125 2650
+Wire Wire Line
+	5100 2650 5675 2650
+Wire Wire Line
+	5675 2650 5675 2575
+Wire Wire Line
+	5675 2575 6125 2575
+Connection ~ 6125 2575
+Text GLabel 3250 2650 0    50   Input ~ 0
+PWMOUT
+Wire Wire Line
+	3700 2650 3250 2650
+Wire Wire Line
+	5200 4650 5200 5050
+$EndSCHEMATC
