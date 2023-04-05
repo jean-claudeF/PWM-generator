@@ -12,5 +12,7 @@ All of these use the pwmc lib
 - test_pwm_03.py    set pwm value with potentiometer and show the result 0% ... 100% on LCD
 - test_pwm_04.py    set PWM and frequency with pots
 
-The test_pwm_04 program works (nearly) fine, but there is a lot of jitter in the signal, and the frequency is not stable, due to the inaccuracy of the ADC.
+The test_pwm_04.py program works (nearly) fine, but there is a lot of jitter in the signal, and the frequency is not stable, due to the inaccuracy of the ADC.
+
+- test_pwm_05.py resolves this problem by switching frequency setting on and off. After frequency is set, the generator holds the last frequency.
 
