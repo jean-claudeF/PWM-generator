@@ -1,6 +1,8 @@
 # PWM-generator
 Versatile PWM generator with Raspi Pico
 
+![Picture](/Hardware/PWMgenerator_02.png)
+
 ## Purpose
 While developing switching power supplies I need a PWM generator.
 I had once built one using a Mega8. Just as I put it on my lab table, I had the thought that it would be much better to use a Pico and program it with Micropython. A short test showed that I was right: the Pico has the advantage that the frequency can be adjusted up to frequencies in the MHz range.
